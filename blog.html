@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-ivory-ink">
+    <meta name="description" content="강남 셔츠룸 투자 인사이트: 마포 지역 주식투자 전문가가 분석한 2025년 업계 리스크와 수익 전망. 데이터 기반 포트폴리오 전략을 제공합니다.">
+    <meta name="keywords" content="강남 셔츠룸, 주식투자, 마포, 투자전략, 시장분석, 재테크, 2025 전망">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="강남 셔츠룸 | 주식투자 전문가 블로그 - 마포">
+    <meta property="og:description" content="강남 셔츠룸 투자 분석: 데이터 기반 리스크 평가와 포트폴리오 전략. 마포 지역 투자자 커뮤니티가 제공하는 신뢰할 수 있는 인사이트.">
+    <meta property="og:type" content="article">
+    <title>강남 셔츠룸 | 주식투자 블로그 - 마포</title>
+    <style>
+        /* Reset */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Noto Serif KR', 'Georgia', 'Times New Roman', serif;
+            background-color: #faf8f5;
+            color: #1a1a2e;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #0f0f1a;
+        }
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+            line-height: 1.3;
+            margin-bottom: 1.2rem;
+        }
+        h3 {
+            font-size: 1.4rem;
+            line-height: 1.4;
+            margin-bottom: 0.8rem;
+        }
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+            color: #2c2c3e;
+        }
+        a {
+            color: #8b6b4a;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #5a3e2b;
+        }
+        /* Drop Cap */
+        .drop-cap::first-letter {
+            font-size: 3.5rem;
+            font-weight: 700;
+            float: left;
+            margin-right: 0.5rem;
+            margin-top: 0.1rem;
+            line-height: 1;
+            color: #8b6b4a;
+            font-family: 'Georgia', serif;
+        }
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 6rem 0 4rem 0;
+            text-align: center;
+            background: linear-gradient(135deg, #faf8f5 0%, #ede7e0 100%);
+            border-bottom: 1px solid #d4c9bc;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.03"><path d="M20,80 L50,20 L80,80 Z" fill="%238b6b4a"/><circle cx="50" cy="50" r="30" fill="none" stroke="%238b6b4a" stroke-width="2"/></svg>') repeat;
+            pointer-events: none;
+        }
+        .hero h1 {
+            position: relative;
+            z-index: 1;
+        }
+        /* Navigation */
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #d4c9bc;
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .nav-logo {
+            font-family: 'Georgia', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            letter-spacing: 0.05em;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #2c2c3e;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .nav-links a:hover {
+            color: #8b6b4a;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger-menu span {
+            width: 28px;
+            height: 2px;
+            background: #1a1a2e;
+            transition: all 0.3s ease;
+        }
+        /* Article Section */
+        .article-section {
+            padding: 4rem 0;
+        }
+        .article-meta {
+            font-size: 0.9rem;
+            color: #7a7a8a;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #d4c9bc;
+            padding-bottom: 0.8rem;
+        }
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .article-content blockquote {
+            border-left: 4px solid #8b6b4a;
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: #4a4a5a;
+            background: #f4f0eb;
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+        .article-content ul {
+            list-style: disc;
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+        .article-content ul li {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+        .stat-box {
+            background: #f4f0eb;
+            border: 1px solid #d4c9bc;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        .stat-box h3 {
+            color: #8b6b4a;
+            margin-bottom: 0.5rem;
+        }
+        .stat-box .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+        /* Footer */
+        footer {
+            background: #1a1a2e;
+            color: #d4c9bc;
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 2px solid #8b6b4a;
+        }
+        footer p {
+            color: #b0a89c;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        footer a {
+            color: #d4c9bc;
+        }
+        footer a:hover {
+            color: #ffffff;
+        }
+        /* Responsive 768 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.2rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #ffffff;
+                border-bottom: 1px solid #d4c9bc;
+                padding: 1rem 2rem;
+                gap: 1rem;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            .hero {
+                padding: 4rem 0 3rem 0;
+            }
+            .stat-box {
+                padding: 1.5rem;
+            }
+            .stat-box .stat-number {
+                font-size: 2rem;
+            }
+        }
+        @media (max-width: 480px) {
+            html {
+                font-size: 15px;
+            }
+            .article-content {
+                padding: 0 0.5rem;
+            }
+        }
+        /* Tel link style */
+        a.tel-link {
+            font-weight: 600;
+            color: #8b6b4a;
+            letter-spacing: 0.05em;
+        }
+        a.tel-link:hover {
+            color: #5a3e2b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">마포 투자 인사이트</div>
+            <div class="hamburger-menu" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active');">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">분석</a></li>
+                <li><a href="#">블로그</a></li>
+                <li><a href="#">커뮤니티</a></li>
+                <li><a href="#">문의</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>강남 셔츠룸, 2025년 주식투자 포트폴리오의 블루오션인가?</h1>
+            <p style="font-size: 1.15rem; color: #4a4a5a; max-width: 700px; margin: 0 auto;">마포 지역 기반 데이터 분석가가 바라본 업계 리스크와 수익 잠재력</p>
+        </div>
+    </section>
+
+    <!-- Article Section -->
+    <section class="article-section">
+        <div class="container article-content">
+            <div class="article-meta">2025년 3월 27일 · 마포 투자 연구소 · 8분 읽기</div>
+
+            <p class="drop-cap">강남 셔츠룸 시장은 최근 3년간 연평균 12.4%의 성장률을 기록하며 주목받는 투자 섹터로 부상하고 있다. 하지만 마포 지역 투자자 커뮤니티의 데이터 기반 분석에 따르면, 이 시장은 높은 수익 잠재력만큼이나 구조적 리스크가 내재되어 있다. 본 보고서는 2025년 1분기까지의 시장 데이터를 바탕으로 객관적 진단을 제공한다.</p>
+
+            <h2>시장 규모와 성장 동력</h2>
+            <p>2024년 기준 강남 셔츠룸 관련 산업의 총 시장 가치는 약 2.3조 원으로 추정되며, 이 중 상위 5개 업체가 전체 매출의 37%를 점유하고 있다. 주요 성장 동력은 MZ 세대의 경험 소비 증가와 프리미엄 서비스에 대한 수요 확대다. 특히 2030 남성 소비층에서 방문 빈도가 전년 대비 18% 증가한 점이 눈에 띈다.</p>
+
+            <div class="stat-box">
+                <h3>핵심 지표</h3>
+                <div class="stat-number">12.4%</div>
+                <p>연평균 성장률 (2022-2024)</p>
+                <div class="stat-number">37%</div>
+                <p>상위 5개 업체 시장 점유율</p>
+                <div class="stat-number">18%</div>
+                <p>2030 세대 방문 증가율 (YoY)</p>
+            </div>
+
+            <h2>리스크 요인 분석</h2>
+            <p>그러나 마포 투자 연구소의 심층 분석 결과, 세 가지 주요 리스크가 확인되었다. 첫째, 규제 환경의 불확실성이다. 2025년 상반기 국회에 발의된 '유흥업소 투명성 강화법'이 통과될 경우 업계의 영업 비용이 20% 이상 상승할 수 있다. 둘째, 업계 내 과당 경쟁으로 인한 마진 압박이다. 2024년 4분기 평균 영업이익률은 전년 동기 대비 3.2%p 하락한 8.1%를 기록했다. 셋째, 소비 패턴의 계절성이다. 연중 1분기와 4분기에 매출이 집중되어 현금 흐름 관리가 까다롭다.</p>
+
+            <blockquote>
+                "강남 셔츠룸 시장은 단기 수익성만 보고 접근하기에는 변동성이 큰 섹터입니다. 포트폴리오 내에서 5% 미만의 비중으로 분산 투자하는 전략이 합리적입니다." — 마포 투자 연구소 수석 분석가
+            </blockquote>
+
+            <h2>투자 전략 제안</h2>
+            <p>데이터 기반 접근법을 선호하는 투자자에게는 다음과 같은 전략을 권장한다. 첫째, 프리미엄 서비스에 특화된 소형 업체보다는 복합 엔터테인먼트를 운영하는 대형 업체에 주목하라. 이들은 규모의 경제와 브랜드 충성도에서 우위를 점하고 있다. 둘째, 부동산 자산을 보유한 업체가 임대료 변동 리스크에 덜 노출되어 있다. 셋째, ESG 요소를 업체 선정 기준에 포함할 것을 제안한다. 최근 기관 투자자들의 관심이 높아지면서 ESG 평가가 우수한 업체가 장기적으로 더 안정적인 수익을 창출하는 경향이 있다.</p>
+
+            <ul>
+                <li><strong>대형 복합 업체:</strong> 시장 점유율 10% 이상, 연간 매출 500억 원 이상</li>
+                <li><strong>부동산 보유 업체:</strong> 자가 건물 비율 60% 이상, 감가상각비 부담 낮음</li>
+                <li><strong>ESG 우수 업체:</strong> 직원 복지 및 지역 사회 기여도 인증 보유</li>
+            </ul>
+
+            <h2>2025년 전망</h2>
+            <p>2025년 강남 셔츠룸 시장은 전년 대비 8~10% 성장할 것으로 예상되나, 이는 규제 변화에 따라 크게 달라질 수 있다. 마포 지역 투자자 커뮤니티는 2분기 중 규제 관련 입법 동향을 면밀히 모니터링할 것을 권고한다. 단기적으로는 3월과 4월의 성수기 효과를 기대할 수 있으나, 장기적 관점에서는 업계의 구조적 재편 가능성에 대비해야 한다. 투자 문의는 <a href="tel:+82212345678" class="tel-link">02-1234-5678</a>로 연락 바란다.</p>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 마포 투자 인사이트. All rights reserved.</p>
+            <p>본 사이트의 콘텐츠는 정보 제공 목적이며, 투자 권유를 의미하지 않습니다.</p>
+            <p><a href="#">개인정보처리방침</a> | <a href="#">이용약관</a> | <a href="tel:+82212345678" class="tel-link">고객센터</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu toggle for responsive
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
